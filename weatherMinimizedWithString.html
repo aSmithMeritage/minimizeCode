@@ -1,0 +1,629 @@
+
+<!-- This is the basic page container -->
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+    <head>
+        
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta property="fb:page_id" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <meta name="geo.placename" content="">
+    <meta name="geo.position" content="">
+    <meta name="geo.region" content="">
+    <meta name="ICBM" content="">
+    <link rel="canonical" href="">
+    <link rel="original-source" href="">
+
+    <script src="https://use.typekit.net/iqx2twd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+    <link type="text/css" rel="stylesheet" href="http://frontyard.dev.laneterralever.com/css/app.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org",
+            "@type" : "Organization",
+            "name" : "",
+            "url" : "",
+            "sameAs" : [
+                "",
+                "",
+                ""
+            ]
+        }
+    </script>
+    <title>Meritage Homes Prototype</title>
+    <!--[if IE]>
+        <link rel="stylesheet" href="/css/app.css">
+    <![endif]-->
+
+    <script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/jquery.min.js"></script>
+    </head>
+	<body>
+        <!-- modules/header/header -->
+<nav class="nav--main" role="navigation">
+    <div class="row full-width diff nav--top hide-for-small-only">
+        <div class="columns">
+            <ul class="list-unstyled futura-bold">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Agents</a></li>
+                <li id="header-live-chat-online" class="chat" onclick="liveagent.startChat('5731A000000PElV')"><a href="#">Live Chat</a></li>
+                <li id="header-live-chat-offline" class="chat" onclick="window.location = '/after_hours/contact';"><a href="#">Live Chat</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">1.877.275.6374</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row full-width diff nav--bottom">
+        <div class="columns">
+            <a href="/" class="logo">
+                <div class="logo--light"><img alt="Meritage Homes Logo" src="http://frontyard.dev.laneterralever.com/etc/logos/logo-meritage-blue.png"></div>
+                <div class="logo--dark"><img alt="Meritage Homes Logo" src="http://frontyard.dev.laneterralever.com/etc/logos/logo-meritage-green.png"></div>
+            </a>
+            <ul id="main-nav" data-responsive-menu="drilldown large-no-drilldown">
+                <li class="hide-for-large not-uppercase">
+                    <!-- <a id="button--search--mobile" class="button expanded button--blue text--blue" href="/modules/demo/search-results.php">
+                        <i class="fa fa-search" aria-hidden="true"></i> Search MeritageHomes
+                    </a> -->
+                    <form action="/pages/8.1-global-search/index.php" id="nav-search-form" method="GET">
+                        <div class="input-group">
+							<label for="nav-search" class="input-group-label" aria-hidden="true"><i class="fa fa-fw fa-search" aria-hidden="true"></i><span class="show-for-sr">Search</span></label>
+							<input id="nav-search" class="input-group-field" type="text" name="search" placeholder="Search MeritageHomes" />
+	                        <input type="submit" class="show-for-sr" value="search" />
+                       </div>
+                    </form>
+                </li>
+                <li class="hide-for-large not-uppercase"><a href="#"><i class="fa fa-crosshairs" aria-hidden="true"></i> Use My Location</a></li>
+                <li class="hide-for-large full-width"><div class="nav--divider"></div></li>
+                <li class="nav--menu-item dropdown--trigger">
+                    <a href="#">Homes</a>
+                    <ul class="vertical nav--submenu">
+                        <!-- <li><a href="#">Quick Move In Homes</a></li> -->
+                        <li><a href="#">AZ</a></li>
+                        <li><a href="#">CA</a></li>
+                        <li><a href="#">CO</a></li>
+                        <li><a href="#">FL</a></li>
+                        <li><a href="#">GA</a></li>
+                        <li><a href="#">NC</a></li>
+                        <li><a href="#">SC</a></li>
+                        <li><a href="#">TN</a></li>
+                        <li><a href="#">TX</a></li>
+                        <li><a href="#">View Map <i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+                <li class="nav--menu-item dropdown--trigger">
+                    <a href="#">Why Meritage</a>
+                    <ul class="vertical nav--submenu">
+                        <li><span>See what sets Meritage Homes apart.</span></li>
+                        <li><a href="#">Why Meritage</a></li>
+                        <li><a href="#">Energy Efficiency</a></li>
+                        <li><a href="#">How we design</a></li>
+                        <li><a href="#">How we build</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav--menu-item dropdown--trigger">
+                    <a href="#">Active Adult</a>
+                    <ul class="vertical nav--submenu">
+                        <li><span>Browse our 55+ Active Adult Communities.</span></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">See our communities</a></li>
+                    </ul>
+                </li>
+                <li class="nav--menu-item dropdown--trigger">
+                    <a href="#">Monterey Homes</a>
+                    <ul class="vertical nav--submenu">
+                        <li><span>Browse our Monterey Homes luxury line.</span></li>
+                        <li><a href="#">Active Adult Overview</a></li>
+                        <li><a href="#">See our communities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown--trigger nav--menu-item">
+                    <a href="#">Buyer Resources</a>
+                    <ul class="vertical nav--submenu">
+                        <li><span>Articles, videos and more to help your search.</span></li>
+                        <li><a href="#">Buying</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Energy Efficiency</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </li>
+                <li class="nav--menu-item dropdown--trigger">
+                    <a href="#">My Home</a>
+                    <ul class="vertical nav--submenu">
+                        <li><span>Helpful links for current and prospective owners alike.</span></li>
+                        <li><a href="#">Warranty Claim</a></li>
+                        <li><a href="#">Homeowner Guide</a></li>
+                    </ul>
+                </li>
+                <li class="search show-for-large">
+                    <a id="button--search" class="button button--white float-right" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                    <a id="button--search--small" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
+                <li class="hide-for-large"><div class="nav--divider nav--divider--shorter"></div></li>
+                <li class="nav--user--buttons hide-for-large">
+                    <div class="row">
+                        <div class="small-6 columns">
+                            <a href="/" class="button expanded button--gray--solid">Log In</a>
+                        </div>
+                        <div class="small-6 columns">
+                            <a href="/" class="button expanded button--blue--solid">Sign Up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav--icons--small">
+                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-comments chat" aria-hidden="true" onclick="liveagent.startChat('5731A000000PElV')"></i></a></li>
+                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                <li id="menu-toggle">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <!-- Used when there's no hero on the page -->
+        <div class="hero hero-dummy"><div class="row full-width nav-height"></div></div>
+        <main>
+
+
+
+
+<!--start weather module-->
+    <input type="hidden" id="geoLoc" value="12794385"/><!--gives location valuee for js app-->
+    <div class="weather-widget loaded">
+        <div class="row full-width diff align-center collapse">
+            <div class="column small-12 large-10 xlarge-8">
+                <div class="row align-center weather-header">
+                    <div class="column region">
+                        <img alt="Weather for" src="http://frontyard.dev.laneterralever.com/etc/images/weather-widget/pin.png"> <span id="weatherLoc"></span>
+                    </div>
+                    <div class="column forecast hide-for-small-only">
+                        5-DAY WEATHER FORECAST
+                    </div>
+                </div>
+                <div class="weather-loader"><img alt="Weather is currently loading" src="http://frontyard.dev.laneterralever.com/etc/images/bx_loader.gif"></div>
+<!--start weather widget here-->
+                <div class="row weather-day-container"></div>
+<!--end weather widget here-->              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+var fillWeather = function() {
+        geoLoc = $("#geoLoc").val();//grab loacatioin ID
+        var weatherAPI = "https://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20weather.forecast%20WHERE%20woeid%3D%22" + geoLoc + "%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+        $.getJSON(weatherAPI, function(weather) {
+            locPath = weather.query.results.channel.location//write one time
+            $("#weatherLoc").html(locPath.city + ", " + locPath.region);
+            $(weather.query.results.channel.item.forecast).each(function(i) {//write multiple times
+                if (i === 0) {
+                    $(".current-condition").html(this.text);
+                } //end if
+                $("div[data-day='" + i + "'] .day-name").html(this.day);
+                $("div[data-day='" + i + "'] .date").html(this.date);
+                $("div[data-day='" + i + "'] .low").html("<span>" + this.low + "</span>");
+                $("div[data-day='" + i + "'] .high").html("<span>" + this.high + "</span>");
+                $("div[data-day='" + i + "'] .weather-icon").css("background-image", "url(http://frontyard.dev.laneterralever.com/etc/images/weather-widget/" + this.code + ".png");
+            }); //end each
+        }); //end get 
+    } //end fillWeather() 
+weatherRpt = '<div class="low"></div><div class="high"></div><div class="weather-icon" ></div>';//build the html template
+$(".row.weather-day-container").html('<div class="column small-12 medium-4 weather-today" data-day="0"> <div class="today"> Today </div><div class="date"></div><div class="current-condition"></div>' + weatherRpt + '<div class="current-temperature">86</div></div>');
+for (i = 4; i > 0; i--) {//go in reverse
+    $(".weather-today").after('<div class="column hide-for-small-only medium-2 weather-day" data-day="' + i + '"> <div class="day-name"></div><div class="date"></div>' + weatherRpt + '</div></div>')
+} //end for
+fillWeather(); //get data after tables are buiult   
+</script>
+
+
+
+
+
+<!--end weather module-->
+        </main>
+
+        <!-- modules/footer/footer -->
+<footer role="contentinfo">
+    <div class="row full-width diff">
+        <div class="columns">
+            <div class="row footer--top">
+                <div class="small-6 medium-3 large-2 column">
+                    <h3>Homes</h3>
+                    <ul>
+                        <li><a href="#">New Homes</a></li>
+                        <li><a href="#">Tour a Meritage Home</a></li>
+                        <li><a href="#">Home Buying 101</a></li>
+                    </ul>
+                </div>
+                <div class="small-6 medium-3 large-2 column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Meritage Cares</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Corporate Offices</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="small-6 medium-3 large-2 column">
+                    <h3>Lifestyle</h3>
+                    <ul>
+                        <li><a href="#">Active Adult</a></li>
+                        <li><a href="#">Monterey Homes</a></li>
+                    </ul>
+                </div>
+                <div class="small-6 medium-3 large-2 column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Directions</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Warranty Request</a></li>
+
+                        <li><a href="#">Vendor Partners</a></li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-12 large-4 optin column">
+                    <div class="optin--social">
+                        <a href="https://www.facebook.com/meritagehomes" title="Meritage Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com/meritagehomes" title="Meritage Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.pinterest.com/meritagehomes" title="Meritage Pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/meritagehomes" title="Meritage YouTube" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/meritagehomes" title="Meritage Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.houzz.com/pro/meritagehomesbuilder/meritage-homes" title="Meritage Houzz" target="_blank"><i class="fa fa-houzz" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="optin--signup">
+                        <p>Home updates and promotions delivered to your inbox</p>
+                        <form id="footer-optin" data-abide novalidate>
+                            <div class="input-group">
+                                <input id="footer-open-modal-email" class="input-group-field" type="email" placeholder="Email Address" title="Email Address" required />
+                                <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                <div class="input-group-button">
+                                    <button id="footer-open-modal-trigger" class="button button--gray--solid" role="button" type="submit">Subscribe</button>
+                                    <!-- metro and community can be populated on a per page basis, if required -->
+                                    <a id="footer-open-modal" class="hidden" data-open="contact-form-modal" data-metro="" data-community="" data-email="" data-mode="footer" aria-hidden="true"></a>
+                                </div>
+                            </div>
+                            <div class="error" style="display: none;" data-abide-error>
+                                <p>Please enter a valid email address.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row full-width background--gray diff">
+        <div class="columns">
+            <div class="footer--bottom">
+                <div class="row align-middle">
+                    <div class="small-12 medium-7 columns text-left">
+                        <ul class="divided-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Claims*</a></li>
+                            <li><a href="#" target="_blank">MyMeritage Buyer Portal</a></li>
+                        </ul>
+                    </div>
+                    <div class="small-12 medium-5 columns">
+                        <ul class="footer--logo-list">
+                            <li><img src="http://frontyard.dev.laneterralever.com/etc/logos/footer_logo_equalhousingopportunity.png" alt="EQUAL HOUSING OPPORTUNITY"></li>
+                            <li><img src="http://frontyard.dev.laneterralever.com/etc/logos/footer_logo_realtor.png" alt="Realtor"></li>
+                            <li><img src="http://frontyard.dev.laneterralever.com/etc/logos/footer_logo_energystar.png" alt="Energy Star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="column disclaimer text-left">
+                        <p>Pictures and other images are representative and may depict or contain floor plans, square footages, elevations, options, upgrades, landscaping, furnishings, appliances, and designer/decorator features and amenities that are not included as part of the home and/or may not be available in all communities. All estimates and claims related to energy savings/performance are created exclusively by third party suppliers, rating services, utility companies, and/or certified auditors, based on DOE methodology and average energy use and scores. Actual energy savings/performance of any home or any of its features may vary widely, depending in part on location, occupant behavior and changes in energy provider rates and programs. Home, pricing, features, and community information is subject to change, and homes to prior sale, at any time without notice or obligation. Not an offer or solicitation to sell real property. Offers to sell real property may only be made and accepted at the sales center for individual Meritage Homes communities. Meritage Homes&reg;, Meritage Active Adult, Monterey Homes, Life.Built.Better.&reg;, Setting the standard for energy-efficient homes&trade;, and LiVE.NOW are trademarks of Meritage Homes Corporation.</p>
+                        <p><span>&copy; 2017 Meritage Homes Corporation. All rights reserved.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <div id="site-search--overlay" class="hidden">
+    <div id="site-search--close">
+        <div class="row align-center">
+            <div class="small-12 medium-10 large-8 columns text-right">
+                <a href="#" aria-hidden="true">&times;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- THIS NEEDS TO BE UPDATED TO SUBMIT TO SEARCH RESULTS PAGE -->
+    <form id="site-search--form" action="/pages/8.1-global-search/index.php" method="GET">
+        <div class="row align-center">
+            <div class="small-12 medium-10 large-8 columns">
+                <label for="site-search--input">
+                    Search for Communities, Floorplans, Resources, or Keywords.
+                </label>
+                <div class="search-input-container">
+                    <input type="text" name="search" id="site-search--input" autocomplete="off" />
+	                <input type="submit" class="show-for-sr" value="search" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="search-options">
+        <div class="row">
+            <div class="small-12 columns">
+                <!-- <h2 class="text--white">Start the search for your perfect home.</h2> -->
+                <h2 class="text--white">Additional search options</h2>
+            </div>
+        </div>
+        <div class="row align-center align-middle" data-equalizer>
+            <div class="small-12 medium-4 columns">
+                <article role="complementary" aria-label="first suggested article name" class="site-search--content-block" data-equalizer-watch>
+                    <h3>New home search</h3>
+                    <p>Use these steps as your guide to feel prepared and confident at every step of the home financing process.</p>
+                    <a href="#[LINK TO HOMES PAGE]" class="button outline">Find your home</a>
+                </article>
+            </div>
+            <div class="small-12 medium-4 columns">
+                <article role="complementary" aria-label="second suggested article name" class="site-search--content-block" data-equalizer-watch>
+                    <h3>Guided home search</h3>
+                    <p>Downsizing doesn’t have to mean downgrading. See tips and tricks to prepare you for your move into a smaller home.</p>
+                    <a href="#[LINK TO GUIDED HOME SEARCH PAGE]" class="button outline">Let's get started</a>
+                </article>
+            </div>
+            <div class="small-12 medium-4 columns">
+                <article role="complementary" aria-label="third suggested article name" class="site-search--content-block" data-equalizer-watch>
+                    <h3>Home buying resources</h3>
+                    <p>From cabinet hardware to tub styles, see bathroom design ideas and upgrades to make it a space you'll value.</p>
+                    <a href="#[LINK TO BUYER RESOURCES PAGE]" class="button outline">Start browsing</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This is the div that contains the video modal, required on pages that contain the full-width-video or video-modal module -->
+<div class="reveal large" id="youtube-video" data-reveal data-reset-on-close="true" aria-label="Video Modal">
+	<div class="flex-video widescreen">
+		<!--<iframe width="420" height="315" src="http://frontyard.dev.laneterralever.comhttps://www.youtube.com/embed/?autoplay=1&showinfo=0&controls=1&rel=0" allowfullscreen style="border:0" title="Youtube video description" aria-label="Youtube video description"></iframe>-->
+	</div>
+    <button class="close-button" data-close aria-label="This button closes the modal" type="button"><span aria-hidden="true" title="Close modal">&times;</span></button>
+</div>
+<!-- /modules/contact-form-modal/contact-form-modal -->
+<section id="contact-form-modal" class="login login--contact-form background--gray reveal medium" data-reveal aria-label="contact form modal section">
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="row full-width diff collapse">
+        <div class="columns">
+            <div class="row collapse align-center">
+                <div class="small-12 columns">
+                    <div id="thank-you">
+                        <div class="row">
+                            <div class="small-12 columns text-center">
+                                <h2 class="no-margin">Thank you for submitting your question.</h2>
+                                <h4 class="text--blue">We'll be in touch as soon as possible.</h4>
+                                <p>Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit. Lorem ipsum dolor sit amet, elit sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
+                                <div class="button-group">
+                                    <a href="#" class="button button--blue">Start your home search</a>
+                                </div>
+                                <br>
+                                <a onclick="$('#contact-form-modal').foundation('close');" class="plain">Close window</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="error">
+                        <div class="row align-center">
+                            <div class="small-12 medium-10 columns text-center">
+                                <h4 class="text--blue">Sorry, something went wrong.</h4>
+                                <p>Please try again later. Placeholder text here.</p>
+                                <a class="button button--blue reset-view" tabindex="0">Go back</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="form-area" class="row align-center collapse">
+                        <div class="small-12 large-10 columns">
+                            <form id="modal_contact-form" method="post" action="#" data-abide novalidate>
+                                <div class="row align-center">
+                                    <div class="small-12 columns">
+                                        <p>Fill in the fields below and someone will follow up with you soon.</p>
+                                    </div>
+                                    <div class="small-12 columns left-group">
+                                        <p class="required-field-text">* Denotes a required field</p>
+                                    </div>
+                                    <div class="small-12 columns left-group" role="radiogroup" aria-labelledby="modal_homebuyer_checkbox">
+                                        <span>I am a *</span>
+                                        <div class="colored-checkbox inline">
+                                            <span>Homebuyer</span>
+                                            <input type="radio" id="modal_homebuyer_checkbox" name="agent_homebuyer" value="homebuyer" aria-label="Select if you're a homebuyer" title="Homebuyer or Agent" checked="checked" required="required" role="radiogroup" />
+                                            <label for="modal_homebuyer_checkbox"><span class="show-for-sr">Homebuyer</span></label>
+                                        </div>
+                                        <div class="colored-checkbox inline">
+                                            <span>Agent</span>
+                                            <input type="radio" id="modal_agent_checkbox" name="agent_homebuyer" value="agent" aria-label="Select if you're an agent" role="radiogroup"/>
+                                            <label for="modal_agent_checkbox"><span class="show-for-sr">Agent</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fa fa-fw fa-user" aria-hidden="true"></i></span>
+                                            <input class="input-group-field" type="text" name="first_name" placeholder="First name*" aria-label="Type your first name" title="Type your first name" required />
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fa fa-fw fa-user" aria-hidden="true"></i></span>
+                                            <input class="input-group-field" type="text" name="last_name" placeholder="Last name*" aria-label="Type your last name" title="Type your last name" required />
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i></span>
+                                            <input id="modal_email" class="input-group-field" type="email" name="email" placeholder="Email address*" aria-label="Type your email address" title="Type your email address" required />
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fa fa-fw fa-phone" aria-hidden="true"></i></span>
+                                            <input class="input-group-field" name="phone" placeholder="Phone number" type='tel' pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" maxlength="25" aria-label="Type your phone number" title="Type your phone number" />
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 columns">
+                                        <h5>Location</h5>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <select id="metro-area-select" name="metro-area" aria-label="Select a metro area." required>
+                                                <option value="">Metro area*</option>
+                                            </select>
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 large-6 columns">
+                                        <div class="input-group">
+                                            <select id="community-select" name="community" aria-label="Select a community name." required disabled>
+                                                <option value="">Community name*</option>
+                                            </select>
+                                            <div class="input-group-label form-error"><i class="fa fw fa-exclamation-triangle" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="small-12 columns question">
+                                        <h5>Your question</h5>
+                                    </div>
+                                    <div class="small-12 columns question">
+                                        <textarea rows="6" name="question" placeholder="What question can we answer for you?" aria-label="What question can we answer for you?"></textarea>
+                                    </div>
+                                </div>
+                                <fieldset>
+                                    <legend class="show-for-sr">Information and newsletter opt-in</legend>
+                                    <div class="row">
+                                        <div class="small-12 columns">
+                                            <span class="colored-checkbox inline">
+                                                <input type="checkbox" id="modal_metro_info" name="metro_info" aria-label="Check if you want to receive info about communities in this metro area" title="Check if you want to receive info about communities in this metro area" role="group">
+                                                <label for="modal_metro_info"><span class="show-for-sr">Yes, please send me more info about communities in this metro area.</span></label>
+                                            </span>
+                                            <label for="modal_metro_info">Yes, please send me more info about communities in this metro area.</label>
+                                        </div>
+                                        <!--<div class="small-12 columns">
+                                            <span class="colored-checkbox inline">
+                                                <input type="checkbox" id="modal_community_info" name="community_info" aria-label="Check if you want to receive info about this community" title="Check if you want to receive info about this community" role="group">
+                                                <label for="community_info"><span class="show-for-sr">Yes, please send me more info about this particular community.</span></label>
+                                            </span>
+                                            <label for="community_info">Yes, please send me more info about this particular community.</label>
+                                        </div>-->
+                                        <div class="small-12 columns">
+                                            <span class="colored-checkbox inline">
+                                                <input type="checkbox" id="modal_newsletter_optin" name="newsletter_optin" aria-label="Select if you want to receive the Meritage Homes newsletter" title="Select if you want to receive the Meritage Homes newsletter">
+                                                <label for="modal_newsletter_optin"><span class="show-for-sr">Checkbox for newsletter_optin</span></label>
+                                            </span>
+                                            <label for="modal_newsletter_optin">Yes, please send me the Meritage Homes e-mail newsletter.</label>
+                                        </div>
+                                        <div class="small-12 columns"><hr /></div>
+                                        <div class="small-12 columns checkbox">
+                                            <span class="colored-checkbox inline">
+                                                <input type="checkbox" id="modal_terms2" name="terms2" aria-label="Terms and Conditions and Privacy Policy agreement" title="Terms and Conditions and Privacy Policy agreement" required>
+                                                <label for="modal_terms2"><span class="show-for-sr">Checkbox for terms2</span></label>
+                                            </span>
+                                            <label for="modal_terms2">I understand and agree to the <a class="plain" href="link-to-terms">Terms</a> and <a class="plain" href="link-to-pp">Privacy Policy</a>.*</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="row align-center">
+                                    <div class="small-12 columns text-center error" style="display: none;" data-abide-error>
+                                        <p class="no-bottom">Please check the information you've entered above.</p>
+                                    </div>
+                                    <div class="small-12 large-8 columns text-center">
+                                        <button type="submit" class="button expanded button--blue--solid button--large-top">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <script src="http://frontyard.dev.laneterralever.com/js/lib/jquery.knob.js"></script>
+<script src="http://frontyard.dev.laneterralever.com/js/lib/jquery.throttle.min.js"></script>
+<script src="http://frontyard.dev.laneterralever.com/js/lib/jquery.classycountdown.min.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/countdown.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/lodash.min.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/what-input.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/foundation.min.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/slick.min.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/ion.rangeSlider.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/tabbedAccordion.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/quickSearch.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/mediaTestimonial.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/vue.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/lib/jquery.youtubebackground.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/nav.js"></script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/app.js"></script>
+
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com/js/ee-cutaway.js"></script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>LiveAgent.setTimer(4000);</script>
+<script type="text/javascript">window._laq||(window._laq=[]);var launchLiveAgent=function(){liveagent.startChat("5731A000000PElV")};window._laq.push(function(){liveagent.showWhenOnline("5731A000000PElV",document.getElementById("header-live-chat-online")),liveagent.showWhenOffline("5731A000000PElV",document.getElementById("header-live-chat-offline"));var a=document.getElementById("liveagent_button_online_5731A000000PElV"),b=document.getElementById("liveagent_button_offline_5731A000000PElV"),c=function(b){for(var c=b+"=",d=document.cookie.split(";"),e=0;e<d.length;e++){for(var f=d[e];" "==f.charAt(0);)f=f.substring(1);if(0==f.indexOf(c))return f.substring(c.length,f.length)}return""};!c("la_sf").length>0&&(liveagent.showWhenOnline("5731A000000PElV",a),liveagent.showWhenOffline("5731A000000PElV",b))});</script>
+<script type='text/javascript' src='https://c.la4-c1-chi.salesforceliveagent.com/content/g/js/35.0/deployment.js'></script>
+<script type='text/javascript'>liveagent.init('https://d.la4-c1-chi.salesforceliveagent.com/chat', '5721A000000PEHS', '00DC0000000Pbr5');</script>
+<script type="text/javascript" src="http://frontyard.dev.laneterralever.com//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b5c4724c09aa03"></script> -->   </body>
+</html>
