@@ -1,0 +1,71 @@
+GLOBAL FILES:
+meritageFrontEnd\js:
+----------------------------
+app.js
+form.js
+nav.js
+progressBar.js
+quickSearch.js
+saveData.js
+tabbedAccordion.js
+video.js
+----------------------------end 
+meritageFrontEnd\js\lib 
+----------------------------
+jquery.min.js
+foundation.min.js
+iframeResizer.contentWindow.min.js
+iframeResizer.min.js
+jquery.autocomplete.min.js(don't need)
+jquery.validate.additional-methods.min.js
+jquery.validate.min.js
+jquery.youtubebackground.js
+remodal.js
+select2.min.js
+slick.min.js
+throttle.js
+vue.js(why do we have two of the same version ?)
+vue.min.js(why do we have two of the same version ?)
+what-input.js
+----------------------------end
+\js\lib\plugins
+----------------------------
+foundation.magellan.min.js
+----------------------------end
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+PAGE SPECIFIC FILES:
+communityFilters.js(metro pages)
+countdown.js(metro pages)
+directions.js(directions)
+ee-cutaway.js(energy-efficiency)
+elevations.js(plan/layout)
+guidedSearch.js(guided-home-search)
+hersSlider.js(energy-efficiency pg)
+mediaTestimonial.js(testimonials pg not sure if this is used)
+testimonialDropdown.js(testimonials)
+usaMap.js(homes pg)
+----------------------------end
+meritageFrontEnd\js\lib 
+----------------------------
+ammap.full.js(homes pg)
+Chart.min.js(finance-calculators)
+classycountdown.js(metro pages) - (are countdowns a global module?)
+ion.rangeSlider.min.js(metro pages, home pg, finance-calculators)
+jquery.simpleWeather.min.js(metro pages)
+knob.js(countdown timer circles)(metro pages)
+usa2Low.js(buyer-resources/home-financing/finance-calculators)
+----------------------------end
+\js\lib\calc
+----------------------------
+class.js(buyer-resources/home-financing/finance-calculators)
+fixedrate.js(buyer-resources/home-financing/finance-calculators)
+functions.js(buyer-resources/home-financing/finance-calculators)
+----------------------------end
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>JavScript Overview</title><!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+  h3[data-title]{
+   cursor:pointer;
+  }
+
+  .panel-body a{
+   text-decoration:underline;
+  }
+ .panel-body a:visited{
+   color:#000;
+  }
+  .scrollWindow{
+    overflow:auto;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 well">
+
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group"> 
+  <a href="#" class="btn btn-default active" role="button" data-info="scriptInfo">JavaScript file Review</a> 
+  <a href="#" class="btn btn-default" role="button" data-info="pageInfo">Website Pages</a> 
+  <a href="#" class="btn btn-default" role="button" data-info="planAction">Plan of Action</a> 
+</div>   
+
+
+<div class="form-group">
+  <br/>
+  <input type="text" class="form-control filterThis" placeholder="Search/Filter">
+</div>           
+        
+      </div><!--end col-->
+    </div><!--end row-->
+
+    <div class="row scrollWindow">
+      <div class="well well-lg" id="scriptInfo"></div><!--end well.-->
+    </div><!--end row-->
+  </div>
+<!--end container-->
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- Include all compiled plugins (below), or include individual files as needed -->
+                   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="js/javasScriptListings.js"></script> 
+<script>
+ whichInfo = [{whichTitle:"0",whichTab:"scriptInfo"}]
+var localAsString = localStorage["whichInfo"];
+if (localAsString) {
+  whichInfo = JSON.parse(localAsString); //start local storage
+  try {
+    whichInfo = JSON.parse(localAsString); //start local storage
+  } catch (error) {
+    whichInfo = [{whichTitle:"0",whichTab:"scriptInfo"}]
+    console.log('local storage record was corrupt, whichInfo has been reset');
+  }
+} //end if
+console.log("whichInfo: " + JSON.stringify(whichInfo)),
+whichTitle = whichInfo.whichTitle,
+  whichTab = whichInfo.whichTab;
+var buildContent = function(whichTab) {
+  console.log("whichTab: " + whichTab)
+  $(scriptInfo).each(function(i) {
+    tagName = this.tagName,
+      description = this.description,
+      affiliatedFileCalls = this.affiliatedFileCalls,
+      dependancy = this.dependancy,
+      version = this.version,
+      type = this.type;
+    if (type === whichTab) {
+      $("#scriptInfo").append("<div class='panel panel-primary' data-num='" + i + "'> <div class='panel-heading'> <h3 class='panel-title' data-title='" + i + "'> - " + tagName + "<\/h3> <\/div><div class='panel-body hide' data-panel='" + i + "'> <h3>Decription:<\/h3><div data-desc>" + description + "<div><h3>Affiliated Calls/Files:<\/h3><ul data-affiliatedFileCalls-" + i + "><\/ul><h3>Dependancies:<\/h3><ul data-dependancy-" + i + "><\/ul> <h5>Version:<\/h5><i data-version>" + version + "<\/i><\/div><\/div>");
+      for (j = 0; j < affiliatedFileCalls.length; j++) {
+        $("ul[data-affiliatedFileCalls-" + i + "]").append("<li><a href='" + affiliatedFileCalls[j] + "' target='_blank' >" + affiliatedFileCalls[j] + "<\/a><\/li>")
+      } //end for
+      for (k = 0; k < dependancy.length; k++) {
+        $("ul[data-dependancy-" + i + "]").append("<li><a href='' target='_blank' >" + dependancy[k] + "<\/a><\/li>")
+      } //end for
+    } //end if
+  }); //end each
+  $(".panel-body[data-panel='" + whichInfo[0].whichTitle + "']").removeClass("hide");
+  $("[role='button']").removeClass("active"),
+    $(".btn-group a[data-info='" + whichInfo[0].whichTab + "']").addClass("active");
+} //end buildContent()
+buildContent(whichInfo[0].whichTab);
+/*start listeners*/
+$(document).on("click", "[role='button']", function() {
+  $(".filterThis").val(""),
+  $("#scriptInfo").html(""),
+    whichTab = $(this).attr("data-info"),
+    buildContent(whichTab);
+  whichInfo = [],
+    whichInfo.push({
+      "whichTitle": whichTitle,
+      "whichTab": whichTab
+    });
+  localStorage["whichInfo"] = JSON.stringify(whichInfo);
+  buildContent(whichInfo);
+}); //end click
+$(document).on("click", "h3[data-title]", function() {
+  $("div[data-panel]").addClass("hide");
+  whichTitle = $(this).attr("data-title");
+  $("div[data-panel='" + whichTitle + "']").removeClass("hide");
+  whichInfo = [],
+    whichInfo.push({
+      "whichTitle": whichTitle,
+      "whichTab": whichTab
+    });
+  localStorage["whichInfo"] = JSON.stringify(whichInfo);
+}); //end click
+
+//start filter
+$(".filterThis").keyup(function() { //start filter search
+    var searchThis = $(this).val();
+    searchThis = searchThis.toString().toLowerCase();
+    var searchLength = searchThis.length;
+    var searchSub = searchThis.substring(0, searchLength);
+    $(".panel-title").each(function() {
+        var item = $(this).text();
+        item = item.toString().toLowerCase();
+        var patt = new RegExp(searchSub);
+        var res = patt.test(item);
+        if (res == false) {
+            $(this).parent(".panel-heading").parent(".panel-primary").addClass("hide");
+        } //end if
+        if (res == true) {
+            $(this).parent(".panel-heading").parent(".panel-primary").removeClass("hide");
+        } //end if
+        if (searchThis == "") {
+            $(this).parent(".panel-heading").parent(".panel-primary").removeClass("hide");
+        } //end if
+    }); //end each
+}); //end keyup
+
+windowH = $(window).height();
+
+$(".scrollWindow").css("maxHeight", (windowH-225))
+</script> 
+
+</body>
+</html>
